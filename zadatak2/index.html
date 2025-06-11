@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cards</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Movie Cards</h1>
+    <button id="loadMovies">Load Movies</button>
+    <p>Filter by Genre:</p>
+    <select id="genreFilter">
+        <option value="all">All</option> <!-- ova opcija je uvijek dostupna, ostale preko JS -->
+    </select>
+    <div class="insert-form">
+        <input type="text" id="newTitle" placeholder="Title">
+        <input type="text" id="newSurname" placeholder="Director">
+        <input type="date" id="newBirthdate" placeholder="Release date">
+        <input type="text" id="newEmail" placeholder="Rating">
+        <input type="text" step="0.1" id="newGrade" placeholder="Genre">
+        <!-- paziti TIPOVE inputa-->
+        <button id="insert">Insert</button>
+    </div>
+    <button id="sortMovies">Sort</button>
+    <div id="movieCards" class="movie-cards">
+        <!-- unijeće se preko JS -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

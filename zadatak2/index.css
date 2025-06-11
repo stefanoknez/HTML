@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#loadMovies {
+    display: block; /*on je zaseban, a filteri su jedni uz druge*/
+}
+
+p {
+    display: inline-block;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+#genreFilter {
+    display: inline-block;
+		
+}
+
+.insert-form input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-cards p {
+    margin-bottom: 5px;
+    display: block; /*da svaki paragraf bude jedan ispod drugog*/
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.movie-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "name": "John",
+        "surname": "Doe",
+        "birthdate": "2000-01-15",
+        "email": "john.doe@example.com",
+        "average_grade": 85.5,
+        "course": "Computer Science"
+    },
+    {
+        "name": "Jane",
+        "surname": "Smith",
+        "birthdate": "1999-07-22",
+        "email": "jane.smith@example.com",
+        "average_grade": 92.3,
+        "course": "Mathematics"
+    },
+    {
+        "name": "Emily",
+        "surname": "Johnson",
+        "birthdate": "2001-03-10",
+        "email": "emily.johnson@example.com",
+        "average_grade": 78.9,
+        "course": "Physics"
+    },
+    {
+        "name": "Michael",
+        "surname": "Brown",
+        "birthdate": "1998-12-05",
+        "email": "michael.brown@example.com",
+        "average_grade": 88.7,
+        "course": "Chemistry"
+    },
+    {
+        "name": "Sarah",
+        "surname": "Davis",
+        "birthdate": "2000-06-14",
+        "email": "sarah.davis@example.com",
+        "average_grade": 90.1,
+        "course": "Biology"
+    },
+    {
+        "name": "David",
+        "surname": "Miller",
+        "birthdate": "1999-09-30",
+        "email": "david.miller@example.com",
+        "average_grade": 84.6,
+        "course": "Engineering"
+    },
+    {
+        "name": "Laura",
+        "surname": "Wilson",
+        "birthdate": "2001-11-20",
+        "email": "laura.wilson@example.com",
+        "average_grade": 91.2,
+        "course": "Economics"
+    },
+    {
+        "name": "James",
+        "surname": "Moore",
+        "birthdate": "1998-04-11",
+        "email": "james.moore@example.com",
+        "average_grade": 79.5,
+        "course": "Philosophy"
+    },
+    {
+        "name": "Emma",
+        "surname": "Taylor",
+        "birthdate": "2000-08-16",
+        "email": "emma.taylor@example.com",
+        "average_grade": 86.8,
+        "course": "Psychology"
+    },
+    {
+        "name": "Daniel",
+        "surname": "Anderson",
+        "birthdate": "1999-02-25",
+        "email": "daniel.anderson@example.com",
+        "average_grade": 82.4,
+        "course": "Sociology"
+    }
+]
