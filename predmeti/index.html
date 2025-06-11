@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subjects Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="filterInput" placeholder="Filter by homework name">
+    <button onclick="filterSubjects()">Filter</button>
+    <button id="deleteBtn">Delete Selected</button>
+    <table id="subjectsTable">
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="selectAll"></th>
+          <th>Subject Name</th>
+          <th>Description</th>
+          <th id="creditsHeader" onclick="toggleSort()">Number of Credits</th>
+          <th>Total Homework Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic content -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

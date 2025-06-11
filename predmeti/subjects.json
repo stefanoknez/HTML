@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Math",
+    "description": "Mathematics subject",
+    "numberOfCredits": 4,
+    "homeworks": [
+      { "name": "Algebra", "description": "Algebra homework", "points": 30 },
+      { "name": "Geometry", "description": "Geometry homework", "points": 30 },
+      { "name": "Calculus", "description": "Calculus homework", "points": 40 }
+    ]
+  },
+  {
+    "name": "Science",
+    "description": "Science subject",
+    "numberOfCredits": 3,
+    "homeworks": [
+      { "name": "Biology", "description": "Biology homework", "points": 20 },
+      { "name": "Chemistry", "description": "Chemistry homework", "points": 30 },
+      { "name": "Physics", "description": "Physics homework", "points": 20 }
+    ]
+  },
+  {
+    "name": "History",
+    "description": "History subject",
+    "numberOfCredits": 2,
+    "homeworks": [
+      { "name": "Ancient", "description": "Ancient history homework", "points": 50 },
+      { "name": "Modern", "description": "Modern history homework", "points": 50 }
+    ]
+  }
+]

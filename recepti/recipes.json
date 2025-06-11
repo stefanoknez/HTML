@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Spaghetti Bolognese",
+    "description": "A classic Italian pasta dish",
+    "duration": "30 minutes",
+    "ingredients": [
+      { "name": "Spaghetti", "unit": "grams", "quantity": 200 },
+      { "name": "Minced Meat", "unit": "grams", "quantity": 300 },
+      { "name": "Tomato Sauce", "unit": "cups", "quantity": 2 }
+    ]
+  },
+  {
+    "name": "Chicken Curry",
+    "description": "A spicy and flavorful dish",
+    "duration": "45 minutes",
+    "ingredients": [
+      { "name": "Chicken", "unit": "grams", "quantity": 400 },
+      { "name": "Curry Powder", "unit": "tablespoons", "quantity": 3 },
+      { "name": "Coconut Milk", "unit": "cups", "quantity": 1 }
+    ]
+  }
+]
