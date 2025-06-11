@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div id="display">0</div>
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">/</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">*</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">-</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="clear">C</button>
+      <button class="operator">+</button>
+    </div>
+    <button class="equals">=</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+----------------------
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.calculator {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+#display {
+  background: #1e1e1e;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-auto-rows: 60px;
+}
+
+button {
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+button.operator {
+  background: #f4a460;
+}
+
+button.clear {
+  background: #e74c3c;
+  color: white;
+}
+
+.equals {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.5rem;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+----------------
+const display = document.getElementById('display');
+const buttons = document.querySelectorAll('.buttons button');
+const equals = document.querySelector('.equals');
+const clear = document.querySelector('.clear');
+
+let current = '';
+let resetNext = false;
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    if (resetNext) {
+      current = '';
+      resetNext = false;
+    }
+
+    const value = button.textContent;
+
+    if (value === 'C') {
+      current = '';
+      display.textContent = '0';
+    } else {
+      current += value;
+      display.textContent = current;
+    }
+  });
+});
+
+equals.addEventListener('click', () => {
+  try {
+    const result = eval(current);
+    display.textContent = result;
+    current = result.toString();
+    resetNext = true;
+  } catch (e) {
+    display.textContent = 'Error';
+    current = '';
+  }
+});

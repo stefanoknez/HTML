@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 let studenti = []
 let sortAscending = true;
 
@@ -16,26 +18,32 @@ function loadStudents(){
             }
             return response.json();
         })
+        .then(data => {
+            studenti = data;
+            displayStudents(studenti);
+        })
+        .catch(error => console.log("greska ", error));
 }
 
 function displayStudents(studentsToShow){
-    const tbody = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+    const tbody = document.getElementById("studentTable").getElementsByTagName("tbody")[0];
     tbody.innerHTML = "";
 
-    studentsToShow.forEach(student => {
+    students.forEach(student => {
         const row = tbody.insertRow();
-        row.insertCell().textContent = student.name;
+        row.insertCell().textContent=student.name;
         row.insertCell().textContent=student.surname;
         row.insertCell().textContent=student.birthdate;
         row.insertCell().textContent=student.email;
         row.insertCell().textContent=student.average_grade;
         row.insertCell().textContent=student.course;
+
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.addEventListener('click', function() {
+        deleteButton.textContent = "Delete";
+        deleteButton.addEventListener('click', function(){
             row.remove();
-        });
-        row.insertCell().appendChild();
+        })
+
+        row.insertCell().appendChild(deleteButton);
     });
 }
-
